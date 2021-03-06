@@ -5,7 +5,7 @@ var taskFormHandler = function(event) {
   event.preventDefault(); 
 
   // find task-name and take-type from HTML
-  var taskNameInput = document.querySelector("input.value[name='task-name']");
+  var taskNameInput = document.querySelector("input[name='task-name']").value;
   var taskTypeInput = document.querySelector("select[name='task-type']").value;
 
   // package up data as an object
